@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>A&G Servicios Técnicos | Quito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Limpieza profunda profesional en Quito. Abrillantado de pisos, equipos Rainbow, Royal Prestige y Electrolux.">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">A&G Servicios Técnicos</div>
+    <div class="menu">
+        <a href="#servicios">Servicios</a>
+        <a href="#marcas">Marcas</a>
+        <a href="#nosotros">Nosotros</a> 
+        <a href="#contacto">Contacto</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="overlay">
+        <h1>Soluciones Profesionales en Limpieza y Equipos Premium</h1>
+        <p>Elevamos el estándar de limpieza y calidad en Quito.</p>
+
+        <a href="https://wa.me/593998919773?text=Hola,%20quiero%20cotizar%20sus%20servicios."
+           target="_blank"
+           class="btn-principal">
+            Solicitar Cotización
+        </a>
+    </div>
+</header>
+
+<section id="servicios" class="seccion">
+    <h2>Servicios Especializados</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Abrillantado de Pisos</h3>
+            <p>Limpieza profunda y restauración de granito, mármol y superficies de alto tráfico.</p>
+        </div>
+
+        <div class="card">
+            <h3>Limpieza de Alfombras</h3>
+            <p>Eliminación de polvo y suciedad con equipos de alto rendimiento.</p>
+        </div>
+
+        <div class="card">
+            <h3>Alquiler Industrial</h3>
+            <p>Abrillantadoras industriales para grandes extensiones y proyectos profesionales.</p>
+        </div>
+    </div>
+</section>
+
+<section class="seccion">
+    <h2>Nuestro Equipo en Acción</h2>
+
+    <p class="texto-central">
+        Trabajo profesional realizado por personal capacitado,
+        utilizando equipos de alto estándar para garantizar resultados visibles.
+    </p>
+
+    <div class="galeria">
+        <img src="{{ url_for('static', filename='images/equipo1.jpg') }}" class="galeria-img">
+        <img src="{{ url_for('static', filename='images/equipo2.jpg') }}" class="galeria-img">
+        <img src="{{ url_for('static', filename='images/equipo3.jpg') }}" class="galeria-img">
+        <img src="{{ url_for('static', filename='images/equipo4.jpg') }}" class="galeria-img">
+    </div>
+</section>
+
+
+<section id="marcas" class="seccion oscuro">
+    <h2>Marcas Premium</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>🌿 Rainbow</h3>
+            <p>Sistema con filtración por agua que contribuye a un ambiente más limpio y fresco. Tecnología enfocada en bienestar y calidad de vida.</p>
+        </div>
+
+        <div class="card">
+            <h3>👑 Royal Prestige</h3>
+            <p>Alta durabilidad, diseño premium y tecnología avanzada. Productos que reflejan nivel y visión.</p>
+        </div>
+
+        <div class="card">
+            <h3>✨ Electrolux</h3>
+            <p>Marca internacional reconocida por eficiencia y confiabilidad. Respaldo global en cada equipo.</p>
+        </div>
+
+        <div class="card">
+            <h3>🦏 Power-Flite</h3>
+            <p>Equipo industriales americanos certificados de alta calidad y durabilidad para trabajos intensivos capaces de garantizar el exito de su trabajo.</p>
+        </div>
+        
+
+
+    </div>
+</section>
+
+<section class="seccion">
+    <h2>Trabajos en Video</h2>
+
+    <p class="texto-central">
+        Resultados reales documentados en campo. Transparencia y calidad comprobable.
+    </p>
+
+    <div class="galeria">
+        <video class="video-box" controls preload="metadata">
+            <source src="{{ url_for('static', filename='videos/trabajo1.mp4') }}" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+
+        <video class="video-box" controls preload="metadata">
+            <source src="{{ url_for('static', filename='videos/trabajo2.mp4') }}" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+    </div>
+</section>
+
+
+<section id="bots" class="seccion oscuro">
+    <h2>Automatización y Bots para Negocios</h2>
+
+    <p class="texto-central">
+        Desarrollamos e implementamos bots inteligentes para automatizar la atención
+        al cliente, responder consultas frecuentes y optimizar procesos digitales.
+        Su negocio puede atender 24/7 sin aumentar costos operativos.
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>🤖 Atención Automática 24/7</h3>
+            <p>
+                Respuestas inmediatas en WhatsApp y redes sociales,
+                sin tiempos de espera y sin necesidad de personal adicional.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📊 Filtrado de Clientes</h3>
+            <p>
+                Clasificación automática de prospectos según interés,
+                servicio requerido o nivel de urgencia.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>⚙ Integración con Meta</h3>
+            <p>
+                Bots conectados a Facebook e Instagram,
+                diseñados bajo estándares de verificación empresarial.
+            </p>
+        </div>
+
+    </div>
+
+    <a href="https://wa.me/593998919773?text=Hola,%20quiero%20informacion%20sobre%20un%20bot%20para%20mi%20negocio."
+       class="btn-principal"
+       target="_blank">
+        Solicitar Demo de Bot
+    </a>
+</section>
+
+
+<section id="nosotros" class="seccion">
+    <h2>¿Quiénes Somos?</h2>
+    <p class="texto-central">
+        Somos un servicio técnico especializado en Quito, enfocado en calidad, profesionalismo
+        y soluciones eficientes para hogares y espacios comerciales.
+        Trabajamos con equipos de alto estándar porque creemos que la excelencia no es opcional.
+    </p>
+</section>
+
+<section class="seccion oscuro">
+    <h2>Nuestro Proceso</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>1️⃣ Evaluación</h3>
+            <p>Analizamos la necesidad específica del cliente.</p>
+        </div>
+        <div class="card">
+            <h3>2️⃣ Ejecución Profesional</h3>
+            <p>Aplicamos técnicas y equipos adecuados para resultados superiores.</p>
+        </div>
+        <div class="card">
+            <h3>3️⃣ Resultado Garantizado</h3>
+            <p>Entrega con estándar profesional y satisfacción comprobable.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="seccion oscuro">
+    <h2>Confianza y Profesionalismo</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>✔ Atención Directa</h3>
+            <p>Comunicación rápida y personalizada vía WhatsApp.</p>
+        </div>
+
+        <div class="card">
+            <h3>✔ Equipos Profesionales</h3>
+            <p>Trabajamos con marcas reconocidas por su calidad y durabilidad.</p>
+        </div>
+
+        <div class="card">
+            <h3>✔ Compromiso con Resultados</h3>
+            <p>Nos enfocamos en resultados visibles y estándares altos.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="contacto" class="seccion contacto">
+    <h2>Contacto</h2>
+    <p><strong>Teléfono:</strong> +593 983760090</p>
+    <p><strong>Ubicación:</strong> Quito, Ecuador</p>
+
+    <a href="https://wa.me/593983760090?text=Hola,%20quiero%20cotizar%20sus%20servicios."
+       target="_blank"
+       class="btn-secundario">
+        Escribir por WhatsApp
+    </a>
+</section>
+
+
+<section class="seccion">
+    <h2>Eleve el Nivel de su Espacio Hoy</h2>
+    <p class="texto-central">
+        Un entorno limpio, brillante y bien mantenido no es un lujo,
+        es una ventaja competitiva.
+    </p>
+
+
+    <a href="https://wa.me/593998919773?text=Hola,%20quiero%20cotizar%20sus%20servicios."
+       target="_blank"
+       class="btn-principal">
+        Solicitar Cotización Ahora
+    </a>
+</section>
+
+
+
+<footer>
+    <p><a href="/privacidad">Política de Privacidad</a></p>
+    © 2026 A&G Servicios Técnicos - Quito, Ecuador
+</footer>
+
+<a href="https://wa.me/593998919773?text=Hola,%20quiero%20informacion."
+   class="whatsapp-float"
+   target="_blank">
+   💬
+</a>
+
+</body>
+</html>
